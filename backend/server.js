@@ -16,7 +16,7 @@ let answer = require("./answer.model");
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb+srv://admin:<password>@cluster0-hch4d.mongodb.net/test?retryWrites=true", {
+mongoose.connect("db", {
   useNewUrlParser: true
 });
 const connection = mongoose.connection;
